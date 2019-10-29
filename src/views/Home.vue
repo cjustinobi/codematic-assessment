@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Trade App</h1>
+    <h1>Saloon App</h1>
     <div v-if="! loading" class="app-container">
       <router-link class="trade-link"  :to="`/${trade._id}`" v-for="(trade, i) in trades" :key="i">
         <span><div class="status" :class="{ 'is-active': trade.is_active}"></div>{{ trade.name }}</span>

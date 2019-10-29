@@ -1,6 +1,7 @@
 <template>
   <div v-if="trade">
-    <h1>Trade Details</h1>
+    <router-link to="/">Go home</router-link>
+    <h1>Saloon Details</h1>
     <div>
       <h1>{{ trade.name }}</h1>
       <p>City: {{ trade.city }}</p>
