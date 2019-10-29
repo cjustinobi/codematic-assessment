@@ -9,7 +9,7 @@
       <p>Phone: {{ trade.phone_number }}</p>
       <div v-if="trade.hours.length">
         <div v-for="(hour, i) in  trade.hours" :key="i">
-          <span v-if="hour.day">Open: {{ hour.day}}</span>
+          <span v-if="hour.day"><b>Open:</b> {{ hour.day}}</span>
           <span v-else>No opened for today</span>
         </div>
       </div>
